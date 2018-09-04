@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Lokaferi</h1>
+<h3>Find passanger boat in Indonesia</h3>
+
+<div id="map" style="width:auto;height:450px;background:yellow"></div>
+
+<script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -3.7867215, lng: 114.5597102},
+    zoom: 5,
+    mapTypeId: 'roadmap'
+  });
+  map.setTilt(45);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=(yourGMapsAPIkeys)&callback=initMap"></script>
+
+
+</body>
+</html>
